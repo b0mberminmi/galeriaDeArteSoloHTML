@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Vanguardia - Galeria</title>
+    <style>
+        /* Estilos para el menú */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            position: static;
+            z-index: 100;
+        }
+
+        ul {
+            list-style: none;
+            padding: 1%;
+            margin: 1%;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        /* Estilos para texto */
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        /* Estilos para imagen */
+        .image {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Dos columnas con proporciones 1:2 */
+            gap: 5px; /* Espacio entre elementos */
+        }
+
+        /*Estilos para footer*/
+        footer {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido de galería -->
+<h1>Galería de Arte</h1>
+<p>Revisa parte de las obras que se encuentran en exhibición.</p>
+
+<!-- Imágenes -->
+<div class="gallery">
+    <div class="image">
+        <img src="/img/imagen1.jpg" alt="Imagen 1" width="auto" height="300">
+        <img src="/img/imagen2.jpg" alt="Imagen 2" width="auto" height="300">
+        <img src="/img/imagen3.jpg" alt="Imagen 3" width="auto" height="300">
+        <img src="/img/imagen4.jpg" alt="Imagen 4" width="auto" height="300">
+        <img src="/img/imagen5.jpg" alt="Imagen 5" width="auto" height="300">
+        <img src="/img/imagen6.jpg" alt="Imagen 6" width="auto" height="300">
+        <img src="/img/imagen7.jpg" alt="Imagen 7" width="auto" height="300">
+        <img src="/img/imagen8.jpg" alt="Imagen 8" width="auto" height="300">
+    </div>
+</div>
+
+<!-- Footer-->
+<footer><i>@Galería Vanguardia - 2024</i></footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Vanguardia - Contacto</title>
+    <style>
+        /* Estilos para el menú */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            position: static;
+            z-index: 100;
+        }
+
+        ul {
+            list-style: none;
+            padding: 1%;
+            margin: 1%;
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        /* Estilos para texto */
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        /*Estilos para footer*/
+        footer {
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido página de contacto -->
+<h1>Contacto</h1>
+
+<h2>Encuentranos en:</h2>
+<p>
+    <b>Dirección:</b> Esperanza 7459, Santiago Centro, Region Metropolitana, Chile.<br>
+    <b>Teléfono:</b>  +1 555-123-4567
+</p>
+
+<!-- Formulario -->
+<h2>Formulario de contacto</h2>
+<p>Llena el formulario si tienes alguna consulta, deseas comprar o vender alguna obras de arte.</p>
+<!-- <form action="procesar_formulario.php" method="post"> -->
+<form style="width: 40%; margin-left: 0;">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br>
+    <label for="tipo-solicitud">Tipo de Solicitud:</label>
+    <select id="tipo-solicitud" name="tipo-solicitud">
+        <option value="compra">Compra</option>
+        <option value="consulta">Consulta</option>
+        <option value="venta">Venta</option>
+    </select><br>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+    <button type="submit">Enviar</button><br>
+</form><br>
+
+<!-- Footer -->
+<footer><i>@Galería Vanguardia - 2024</i></footer>
+
+</body>
+</html>
